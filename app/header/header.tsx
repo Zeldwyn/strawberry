@@ -1,6 +1,6 @@
 "use client";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
 export default function HeaderComponent() {
@@ -33,7 +33,8 @@ export default function HeaderComponent() {
             <Menu className="text-black" />
           </SheetTrigger>
           <SheetContent side="right" className="w-[260px] sm:w-[300px]">
-            <nav className="flex flex-col gap-4 mt-10 text-base font-medium">
+            <SheetTitle />
+            <nav className="flex flex-col gap-6 mt-14 text-base font-medium text-center">
               <a href="#">Home</a>
               <a href="#">Service</a>
               <a href="#">Feature</a>
@@ -41,9 +42,9 @@ export default function HeaderComponent() {
               <a href="#">Testimonial</a>
               <a href="#">FAQ</a>
             </nav>
-            <div className="mt-6 flex flex-col gap-2">
-              <button className="bg-green-500 text-white px-4 py-2 rounded-md">Login</button>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-md">Sign Up</button>
+            <div className="mt-6 flex flex-col gap-2 items-center">
+              <button className="w-30 text-green-600 px-4 py-2 rounded-md text-sm">Login</button>
+              <button className="w-30 bg-green-500 text-white px-4 py-2 rounded-sm text-sm">Sign Up</button>
             </div>
           </SheetContent>
         </Sheet>
