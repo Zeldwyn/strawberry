@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col font-sans">
+    <div className="min-h-screen overflow-x-hidden flex flex-col font-sans">
       <header>
         <HeaderComponent />
       </header>
